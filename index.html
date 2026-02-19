@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONFIRMA ESE MINE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1rem;
+            flex: 1;
+            transition: all 0.3s ease;
+        }
+
+        .yes {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .yes:hover {
+            background: #45a049;
+        }
+
+        .no {
+            background: #f44336;
+            color: white;
+        }
+
+        .no:hover {
+            background: #da190b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CONFIRMA ESE MINE</h1>
+
+        <div class="buttons">
+            <button class="button yes" onclick="confirmYes()">SÍ</button>
+            <button class="button no" onclick="confirmNo()">NO</button>
+        </div>
+    </div>
+
+    <script>
+        function confirmYes() {
+            alert('¡Gracias por confirmar!');
+            // Puedes redirigir a otra página si quieres
+            // window.location.href = 'https://google.com';
+        }
+
+        function confirmNo() {
+            alert('Entendido, gracias por tu respuesta');
+            // Puedes redirigir a otra página si quieres
+            // window.location.href = 'https://google.com';
+        }
+    </script>
+</body>
+
+</html>
